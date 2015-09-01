@@ -1,0 +1,2 @@
+copy /Y fake-mcs\bin\Debug\fake-mcs.exe "C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\smcs.exe"
+copy /Y fake-mcs\bin\Debug\fake-mcs.exe "C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\gmcs.exe"
