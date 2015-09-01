@@ -14,7 +14,10 @@ namespace fake_mcs
         Path.GetDirectoryName(asseblyLocation), @"..\..\..\..\..\..\unityfull"
       ));
 
-      var mcsLocation = Environment.ExpandEnvironmentVariables(@"%ProgramFiles%\Mono\lib\mono\4.5\mcs.exe");
+      sdkLocation = Environment.GetEnvironmentVariable("UNITY_NEW_MONO_SDK") ?? sdkLocation;
+
+      var mcsLocation = Environment.GetEnvironmentVariable("UNITY_NEW_MONO") 
+        ?? Environment.ExpandEnvironmentVariables(@"%ProgramFiles%\Mono\lib\mono\4.5\mcs.exe");
 
       var procStartInfo =
         new System.Diagnostics.ProcessStartInfo(mcsLocation);
