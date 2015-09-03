@@ -30,3 +30,7 @@ You can specify these environment variables to change the behaviour of the wrapp
 We have only checked this on Windows. Pull requests are welcome.
 
 Other than that - if you have problems check the log file at `%TEMP%\UnityMonoUpdatedCompilerOutput.txt`
+
+## Original Author
+
+Evaldas Čiakas <evaldas@tinylabproductions.com>
