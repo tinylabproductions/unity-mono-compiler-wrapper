@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Text;
 
 namespace fake_mcs
@@ -31,8 +30,7 @@ namespace fake_mcs
         //        new System.Diagnostics.ProcessStartInfo(@"C:\Program Files (x86)\Mono\bin\mono.exe");
         //        new System.Diagnostics.ProcessStartInfo(@"C:\Program Files (x86)\Mono\bin\mcs.bat");
 
-        procStartInfo.Arguments = $@"""-sdk:{sdkLocation}"" --runtime:v2 " +
-                                  args.Aggregate("", (s, s1) => s + " " + s1);
+        procStartInfo.Arguments = $@"""-sdk:{sdkLocation}"" --runtime:v2 " + string.Join(" ", args);
 
 //      procStartInfo.Arguments = @"""C:\Program Files (x86)\Mono\lib\mono\4.5\mcs.exe"" " + procStartInfo.Arguments;
 
