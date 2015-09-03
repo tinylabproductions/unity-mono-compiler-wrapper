@@ -13,7 +13,7 @@ Because Unity uses a very old Mono compiler this fixes various problems, like:
 - Install [latest mono](http://www.mono-project.com/download/).
 - Either:
  - Install [UnityVS](http://unityvs.com/) & get Unity SDK files from `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Unity Full v3.5`.
- - Download Unity SDK files [`unityfull.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/)
+ - Download Unity SDK files from here: [`unityfull.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/)
 - Put Unity SDK files somewhere - the default location is `%UNITY_INSTALL_DIR%\unityfull`.
 - Download [`compiler-upgrade.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/).
 - Extract `compiler-upgrade.zip` to `%UNITY_INSTALL_DIR%` overwriting any files.
