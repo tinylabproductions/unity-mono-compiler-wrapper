@@ -15,8 +15,8 @@ Because Unity uses a very old Mono compiler this fixes various problems, like:
  - Install [UnityVS](http://unityvs.com/) & get Unity SDK files from `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Unity Full v3.5`.
  - Download Unity SDK files [`unityfull.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/)
 - Put Unity SDK files somewhere - the default location is `%UNITY_INSTALL_DIR%\unityfull`.
-- Download [`fake-mcs.exe`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/).
-- Copy `fake-mcs.exe` to `%UNITY_INSTALL_DIR%\Editor\Data\Mono\lib\mono\unity\smcs.exe` and `%UNITY_INSTALL_DIR%\Editor\Data\Mono\lib\mono\2.0\gmcs.exe`.
+- Download [`compiler-upgrade.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/).
+- Extract `compiler-upgrade.zip` to `%UNITY_INSTALL_DIR%` overwriting any files.
 
 ### Environment variables
 
@@ -27,4 +27,6 @@ You can specify these environment variables to change the behaviour of the wrapp
 
 ## Troubleshooting
 
-If you have problems check the log file at `%TEMP%\UnityMonoUpdatedCompilerOutput.txt`
+We have only checked this on Windows. Pull requests are welcome.
+
+Other than that - if you have problems check the log file at `%TEMP%\UnityMonoUpdatedCompilerOutput.txt`
