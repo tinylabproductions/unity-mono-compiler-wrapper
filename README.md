@@ -9,6 +9,8 @@ Because Unity uses a very old Mono compiler this fixes various problems, like:
 
 ## Setting up
 
+`%UNITY_INSTALL_DIR%` is the directory you've installed Unity. That means it's the directory with `Editor/` and `MonoDevelop/` directories inside of it.
+
 ### Instructions
 - Install [latest mono](http://www.mono-project.com/download/).
 - Either:
