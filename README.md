@@ -1,13 +1,30 @@
-# unity-mono-compiler-wrapper
+# Unity Mono Compiler Wrapper
 
-Updates Unity mono compiler to a newer version.
+Updates Unity to use newer Mono compiler. 
 
-Released zip available here: [Releases](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases)
+Because Unity uses a very old Mono compiler this fixes various problems, like:
+* Not compiling perfectly valid C# code.
+* Generating invalid IL (http://forum.unity3d.com/threads/compiling-errors.319958/ - as far as we know this is related to nested classes).
+* Not being to use C# 6 - yay!
 
-Instructions:
- - Install latest mono http://www.mono-project.com/download/#download-win
- - Install UnityVS http://unityvs.com/
- - Copy `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Unity Full v3.5` to `C:\Program Files\Unity\unityfull`
- - Build attached project and run `copy-files-release.bat` as administrator (you may also want to backup them first)
+## Setting up
+
+### Instructions
+- Install [latest mono](http://www.mono-project.com/download/).
+- Either:
+ - Install [UnityVS](http://unityvs.com/) & get Unity SDK files from `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Unity Full v3.5`.
+ - Download Unity SDK files [`unityfull.zip`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/)
+- Put Unity SDK files somewhere - the default location is `%UNITY_INSTALL_DIR%\unityfull`.
+- Download [`fake-mcs.exe`](https://github.com/tinylabproductions/unity-mono-compiler-wrapper/releases/).
+- Copy `fake-mcs.exe` to `%UNITY_INSTALL_DIR%\Editor\Data\Mono\lib\mono\unity\smcs.exe` and `%UNITY_INSTALL_DIR%\Editor\Data\Mono\lib\mono\2.0\gmcs.exe`.
+
+### Environment variables
+
+You can specify these environment variables to change the behaviour of the wrapper:
+
+* `UNITY_NEW_MONO_SDK` - path to Unity SDK which is used when building (default: `%UNITY_INSTALL_DIR%\unityfull`).
+* `UNITY_NEW_MONO` - path to new version of Mono (default: `%ProgramFiles%\Mono\lib\mono\4.5\mcs.exe`).
+
+## Troubleshooting
 
 If you have problems check the log file at `%TEMP%\UnityMonoUpdatedCompilerOutput.txt`
