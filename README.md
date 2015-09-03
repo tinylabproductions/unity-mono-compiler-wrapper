@@ -6,7 +6,7 @@ Because Unity uses a very old Mono compiler this fixes various problems, like:
 * Not compiling perfectly valid C# code.
 * Generating garbage when there should be no garbage (http://makegamessa.com/discussion/1493/it-s-official-foreach-is-bad-in-unity).
 * Generating invalid IL (http://forum.unity3d.com/threads/compiling-errors.319958/ - as far as we know this is related to nested classes).
-* Not being to use C# 6 - yay!
+* Not being able to use C# 6 - yay!
 
 ## Setting up
 
