@@ -1,6 +1,6 @@
 # !!! NOTICE !!!
 
-Turns out we've reinvented the wheel. [Alex Zhdankin](Alex Zhdankin) has a better version of this tool [on BitBucket](https://bitbucket.org/alexzzzz/unity-c-5.0-and-6.0-integration/overview). Please use that.
+Turns out we've reinvented the wheel. [Alex Zhdankin](https://bitbucket.org/alexzzzz/) has a better version of this tool [on BitBucket](https://bitbucket.org/alexzzzz/unity-c-5.0-and-6.0-integration/overview). Please use that.
 
 This will be left for search & scholary purposes.
 
